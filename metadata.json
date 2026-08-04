@@ -1,0 +1,6 @@
+{
+  "name": "Sunaulo Pathways",
+  "description": "Your Golden Gateway to Global Education, Study Abroad Counseling, AI Pathway & Scholarship Advisor, and Career Guidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Sunaulo Pathways - Study Abroad & AI Advisor",
+  "short_name": "Sunaulo AI",
+  "description": "Nepal's Premier Study Abroad Counseling, AI Scholarship Advisor, and Visa Portal.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f172a",
+  "theme_color": "#1d4ed8",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=192&auto=format&fit=crop&q=80",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=512&auto=format&fit=crop&q=80",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

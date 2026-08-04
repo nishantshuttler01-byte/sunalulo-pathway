@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Sunaulo Pathways | Study Abroad & AI Advisor for Nepal</title>
+    
+    <!-- Mobile & PWA App Metadata -->
+    <meta name="theme-color" content="#1d4ed8" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Sunaulo Pathways" />
+    <meta name="application-name" content="Sunaulo Pathways" />
+    
+    <!-- App Icons -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=192&auto=format&fit=crop&q=80" />
+    <link rel="icon" type="image/png" href="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=192&auto=format&fit=crop&q=80" />
+  </head>
+  <body className="bg-slate-50 antialiased selection:bg-blue-100 selection:text-blue-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Service Worker Registration for iOS & Android Mobile PWA -->
+    <script>
+      if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('Sunaulo PWA ServiceWorker ready:', reg.scope))
+            .catch(err => console.log('ServiceWorker registration skipped:', err));
+        });
+      }
+    </script>
+  </body>
+</html>
+
+
